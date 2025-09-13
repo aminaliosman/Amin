@@ -1,24 +1,23 @@
 storage = {
-    'cap' : 18,# 5 manat
-    'trousers' : 80, # 30 manat
-    'shirt' : 65 # 15 manat
+    'cap': 5,
+    'trousers': 30,
+    'shirt': 15
 }
 
-price = {
-    'cap_price' : 5,
-    'trousers_price' : 30,
-    'shirt_price': 15
-}
+balance = 200
 
-user = input("Enter the clothes ")
-a = int(input("How many you want take "))
-def b():
-if storage['cap']  - 1 and  balance - price['cap_price']:
-    balance = 200
-    balance - price['cap_price'] or price['trousers_price'] or price['shirt_price']
-    print(f'it is your {balance}')
-elif
+print(f"Bizim balansda: {balance} manat var.")
+print("Bizde cap 5 ₼ , trousers 30 ₼ ve shirt 15 ₼")
 
-b(a)
+a = int(input("Siz ne isteyirsiniz? "))
 
 
+if a == storage['cap']:
+    balance -= storage['cap']
+    print('Siz cap aldiz')
+elif a == storage['trousers']:
+    balance -= storage['trousers']
+    print('Siz trouser aldiz')
+elif a == storage['shirt']:
+    balance -= storage['shirt']
+    print('Siz shirt aldiz')
